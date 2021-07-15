@@ -1,14 +1,29 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import { 
+  View, 
+  Text, 
+  SafeAreaView, 
+  Platform,
+  StatusBar
+} from 'react-native';
+import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
 
+
+const isAndroid = Platform.OS === 'android'
 
 const Search = () => {
     return (
-        <View>
-          <Text>Search</Text>
-          <StatusBar style="auto" />
-        </View>
+        <>
+          <SafeAreaView style={{flex: 1, marginTop: StatusBar.currentHeight}}>
+            <View style={{padding: 16, backgroundColor: 'aquamarine'}}>
+              <Text>Search</Text>
+            </View>
+            <View style={{flex: 1, padding: 16, backgroundColor: 'aqua'}}>
+              <Text>List Container</Text>
+            </View>
+          <ExpoStatusBar style="auto" />
+          </SafeAreaView>
+        </>
       );
 }
 

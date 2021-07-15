@@ -1,8 +1,7 @@
 
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, SafeAreaView, Text, View, Platform} from 'react-native';
-
+import { StyleSheet, Text, View, Platform} from 'react-native';
 
 const Home = () => {
     return (
