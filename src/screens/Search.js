@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 
-export default Search = () => {
+const Search = () => {
     return (
         <View>
           <Text>Search</Text>
@@ -11,3 +11,5 @@ export default Search = () => {
         </View>
       );
 }
+
+export default Search

@@ -4,7 +4,7 @@ import React from 'react';
 import { StyleSheet, SafeAreaView, Text, View, Platform} from 'react-native';
 
 
-export default Home = () => {
+const Home = () => {
     return (
         <View style={styles.container}>
           <Text>Meals2Go App</Text>
@@ -22,3 +22,5 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
   });
+
+  export default Home
