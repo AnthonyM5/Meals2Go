@@ -1,11 +1,11 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Home from '../MealsApp/src/screens/Home'
-import Search from '../MealsApp/src/screens/Search'
-import { Button } from 'react-native';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import Home from "../MealsApp/src/screens/Home";
+import Search from "../MealsApp/src/screens/Search";
+import { Button } from "react-native";
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
           <Stack.Screen 
           name="Home" 
           component={Home} 
-          options={ ({navigation}) => ({
+          options={ ({ navigation }) => ({
             headerRight: () =>
             <Button 
             title="Search"
