@@ -11,31 +11,33 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-          <Stack.Screen 
-          name="Home" 
-          component={Home} 
-          options={ ({ navigation }) => ({
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={({ navigation }) => ({
             headerRight: () =>
-            <Button 
-            title="Search"
-            onPress={() => navigation.navigate('Search')}/>
+              <Button
+                title="Search"
+                onPress={() => navigation.navigate("Search")}
+              />
           })}
-          />
-          <Stack.Screen 
-          name="Search" 
+        />
+        <Stack.Screen
+          name="Search"
           component={Search}
-          options={ ({navigation}) => ({
+          options={({ navigation }) => ({
             headerRight: () =>
-            <Button 
-            title="Home"
-            onPress={() => navigation.navigate('Home')}/>
-          })} 
-          />
+              <Button
+                title="Home"
+                onPress={() => navigation.navigate("Home")}
+              />
+          })}
+        />
       </Stack.Navigator>
     </NavigationContainer>
-  )
-}
+  );
+};
 
-export default App
+export default App;
 
 
