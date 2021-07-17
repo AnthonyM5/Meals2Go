@@ -1,15 +1,6 @@
 import React from "react";
-import {
-  View,
-  Text,
-  SafeAreaView,
-  Platform,
-  StatusBar,
-  StyleSheet,
-} from "react-native";
+import { View, Text, SafeAreaView, StatusBar, StyleSheet } from "react-native";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
-
-const isAndroid = Platform.OS === "android";
 
 const Search = () => {
   return (
